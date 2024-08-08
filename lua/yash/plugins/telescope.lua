@@ -11,6 +11,11 @@ return {
 		local actions = require("telescope.actions")
 		telescope.setup({
 			defaults = {
+				pickers = {
+					find_files = {
+						hidden = true,
+					},
+				},
 				path_display = { "truncate" },
 				mappings = {
 					i = {
