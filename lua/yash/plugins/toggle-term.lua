@@ -16,8 +16,8 @@ return {
 			auto_scroll = true,
 			float_opts = {
 				border = "single",
-				width = 108,
-				height = 32,
+				width = 96,
+				height = 24,
 				winblend = 3,
 				title_pos = "center",
 			},
