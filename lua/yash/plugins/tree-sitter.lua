@@ -27,6 +27,7 @@ return {
 			},
 			-- ensure these language parsers are installed
 			ensure_installed = {
+				"http",
 				"json",
 				"javascript",
 				"typescript",
