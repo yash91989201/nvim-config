@@ -49,6 +49,7 @@ return {
 				"taplo",
 				"terraformls",
 				"tflint",
+				"yamlls",
 			},
 		})
 
