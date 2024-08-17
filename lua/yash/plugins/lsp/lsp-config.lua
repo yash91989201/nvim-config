@@ -142,6 +142,7 @@ return {
 			end,
 			["yamlls"] = function()
 				lspconfig["yamlls"].setup({
+					capabilities = capabilities,
 					settings = {
 						yaml = {
 							schemas = {

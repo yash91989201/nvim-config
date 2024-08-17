@@ -19,6 +19,8 @@ return {
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
+				bash = { "shfmt" },
+				sh = { "shfmt" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
