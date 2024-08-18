@@ -33,6 +33,9 @@ return {
 			git = {
 				ignore = false,
 			},
+			filters = {
+				dotfiles = false,
+			},
 		})
 
 		-- set keymaps

@@ -9,13 +9,9 @@ return {
 	config = function()
 		local telescope = require("telescope")
 		local actions = require("telescope.actions")
+
 		telescope.setup({
 			defaults = {
-				pickers = {
-					find_files = {
-						hidden = true,
-					},
-				},
 				path_display = { "truncate" },
 				mappings = {
 					i = {
@@ -23,6 +19,11 @@ return {
 						["<C-j>"] = actions.move_selection_next, -- move to previous result
 						["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- move to previous result
 					},
+				},
+			},
+			pickers = {
+				find_files = {
+					hidden = true,
 				},
 			},
 		})
