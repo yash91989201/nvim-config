@@ -13,6 +13,12 @@ return {
 		telescope.setup({
 			defaults = {
 				path_display = { "truncate" },
+				file_ignore_patterns = {
+					"node_modules",
+					".svelte%-kit",
+					".next",
+					".git",
+				},
 				mappings = {
 					i = {
 						["<C-k>"] = actions.move_selection_previous, -- move to previous result
