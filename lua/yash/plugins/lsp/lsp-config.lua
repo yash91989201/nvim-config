@@ -159,6 +159,18 @@ return {
 					},
 				})
 			end,
+			["cssls"] = function()
+				lspconfig["cssls"].setup({
+					settings = {
+						css = {
+							validate = true,
+							lint = {
+								unknownAtRules = "ignore",
+							},
+						},
+					},
+				})
+			end,
 		})
 	end,
 }
