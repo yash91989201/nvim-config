@@ -53,10 +53,15 @@ return {
 				"sql",
 				"templ",
 				"terraform",
+				"hcl",
 				"proto",
 				"nginx",
 				"helm",
 			},
+			sync_install = true,
+			auto_install = true,
+			ignore_install = {},
+			modules = {},
 			incremental_selection = {
 				enable = true,
 				keymaps = {

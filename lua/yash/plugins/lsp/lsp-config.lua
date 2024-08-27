@@ -171,6 +171,16 @@ return {
 					},
 				})
 			end,
+			["terraformls"] = function()
+				lspconfig["terraformls"].setup({
+					root_dir = lspconfig.util.root_pattern("*.tf"),
+				})
+			end,
+			["tflint"] = function()
+				lspconfig["tflint"].setup({
+					root_dir = lspconfig.util.root_pattern("*.tf"),
+				})
+			end,
 		})
 	end,
 }
