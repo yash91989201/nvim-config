@@ -183,4 +183,9 @@ return {
 			end,
 		})
 	end,
+	opts = {
+		servers = {
+			terraformls = {},
+		},
+	},
 }

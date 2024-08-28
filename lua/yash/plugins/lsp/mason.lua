@@ -47,7 +47,7 @@ return {
 				"jsonls",
 				"sqlls",
 				"taplo",
-				"terraformls",
+				"tflint",
 				"yamlls",
 			},
 		})
