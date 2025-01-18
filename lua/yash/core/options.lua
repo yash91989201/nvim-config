@@ -7,7 +7,7 @@ opt.number = true
 
 -- tabs and indentation
 opt.tabstop = 2 -- 2 spaces for tabs
-opt.shiftwidth= 2 -- 2 spaces for indent width
+opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tabs to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
@@ -32,4 +32,10 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true -- split vertical window to right
 opt.splitbelow = true -- split horizontal window to bottom
 
-
+-- vim.api.nvim_create_autocmd("BufReadPre", {
+-- 	group = vim.api.nvim_create_augroup("showtabline", { clear = true }),
+-- 	callback = function()
+-- 		vim.opt.showtabline = 0
+-- 	end,
+-- 	desc = "Set tabline to 0",
+-- })
