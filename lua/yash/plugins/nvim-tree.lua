@@ -19,6 +19,8 @@ return {
 				indent_markers = {
 					enable = true,
 				},
+				group_empty = false,
+				root_folder_modifier = ":t",
 			},
 			-- disable window_picker for
 			-- explorer to work well with
@@ -31,11 +33,10 @@ return {
 					},
 				},
 			},
-			git = {
-				ignore = false,
-			},
 			filters = {
 				dotfiles = false,
+				custom = { ".git", ".next", "node_modules" },
+				exclude = { ".*%.env.*", ".gitignore" },
 			},
 		})
 
