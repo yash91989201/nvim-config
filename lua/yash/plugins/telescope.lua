@@ -19,6 +19,7 @@ return {
 					".svelte%-kit",
 					".next",
 					".git",
+					".venv",
 				},
 				mappings = {
 					i = {
