@@ -39,7 +39,7 @@ return {
 			filters = {
 				dotfiles = false,
 				custom = { ".git", ".next", "node_modules" },
-				exclude = { ".*%.env.*", ".gitignore" },
+				exclude = { ".*%.env.*", ".gitignore", "Dockerfile" },
 			},
 		})
 
