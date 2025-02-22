@@ -2,6 +2,8 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+keymap.set("n", "<leader>W", "<C-w>", { noremap = true, silent = true })
+
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" })
@@ -13,7 +15,18 @@ keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
+
+keymap.set("n", "<leader>sd", "<C-w>+", { desc = "Increase window height" })
+keymap.set("n", "<leader>ss", "<C-w>-", { desc = "Decrease window height" })
+keymap.set("n", "<leader>sf", "<C-w>>", { desc = "Increase window width" })
+keymap.set("n", "<leader>sa", "<C-w><", { desc = "Decrease window height" })
+
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
+keymap.set("n", "<leader>sh", "<C-w>h", { desc = "Move to left window" })
+keymap.set("n", "<leader>sj", "<C-w>j", { desc = "Move to down window" })
+keymap.set("n", "<leader>sk", "<C-w>k", { desc = "Move to up window" })
+keymap.set("n", "<leader>sl", "<C-w>l", { desc = "Move to right window" })
+
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
