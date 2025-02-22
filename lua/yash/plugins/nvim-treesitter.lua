@@ -40,6 +40,7 @@ return {
 				"markdown",
 				"markdown_inline",
 				"svelte",
+				"regex",
 				"graphql",
 				"bash",
 				"lua",

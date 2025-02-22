@@ -52,6 +52,7 @@ end, { desc = "Close all other tabs" })
 
 -- Switch to normal mode in nvim terminal
 keymap.set("t", "<Esc>", "<C-\\><C-n><C-w>h", { silent = true, desc = "Normal mode in terminal" })
+
 --- Open nvim terminal in new tab with insert mode
 keymap.set("n", "<leader>st", function()
 	vim.cmd("tabnew")
