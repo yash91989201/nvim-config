@@ -30,3 +30,7 @@ WSL UBUNTU
 18. terraform
 19. pulumi
 20. global npm libs for nvim tree-sitter-cli, eslint, neovim
+21. protoc (installed from releases)
+22. protoc-gen-go (installed using go)
+23. protoc-gen-go-grpc (installed using go)
+24. buf (lint, format protobuf files, installed using go)
