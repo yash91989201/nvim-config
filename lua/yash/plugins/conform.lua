@@ -21,6 +21,14 @@ return {
 				lua = { "stylua" },
 				bash = { "shfmt" },
 				sh = { "shfmt" },
+				proto = { "buf" },
+			},
+			formatters = {
+				buf = {
+					command = "buf",
+					args = { "format", "--write", "$FILENAME" },
+					stdin = false,
+				},
 			},
 			format_on_save = {
 				lsp_fallback = true,

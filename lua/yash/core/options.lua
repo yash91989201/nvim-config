@@ -31,11 +31,3 @@ opt.clipboard:append("unnamedplus")
 
 opt.splitright = true -- split vertical window to right
 opt.splitbelow = true -- split horizontal window to bottom
-
--- vim.api.nvim_create_autocmd("BufReadPre", {
--- 	group = vim.api.nvim_create_augroup("showtabline", { clear = true }),
--- 	callback = function()
--- 		vim.opt.showtabline = 0
--- 	end,
--- 	desc = "Set tabline to 0",
--- })
